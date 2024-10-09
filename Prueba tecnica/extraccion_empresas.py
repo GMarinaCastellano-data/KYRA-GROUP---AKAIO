@@ -15,11 +15,6 @@ print(soup.prettify())
 # Busca los objetos con la etiqueta deseada y la clase concreta que hay en esta web
 empresas_objetos = soup.find_all('div', class_='sc-jHCGmr sc-ewOTSi cJSYVK hirQyM')
 
-# Verificar que se encontraron elementos
-if empresas_objetos:
-    print(f"Se encontraron {len(empresas_objetos)} elementos")
-else:
-    print("No se encontraron elementos")
 
 
 # Iteramos sobre el array items  para introducir en una variable el valor que queremos extraer, e imprimo para ver como sale
